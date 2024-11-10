@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Sitemap: http://www.demo.com/sitemap.xml
+Sitemap: http://www.demo.com/dyn-sitemap.php
