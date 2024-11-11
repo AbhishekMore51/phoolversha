@@ -232,7 +232,7 @@ $navigation = "index";
 					<div class="container">
 						<div class="inner-container">
 							<div class="inner">
-								<div class="inner-block pdB-24">
+								<div class="inner-block">
 									<div class="block-con">
 										<div class="block-con-1">
 											<div class="tag-block">
@@ -259,10 +259,10 @@ $navigation = "index";
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="inner-block-1 inner-block">
-									<div class="block-con">
-										<div class="block">
+
+									<!--  -->
+									<div class="block-con block-con-3 inner">
+										<div class="block pdB-45">
 											<div class="block-0">
 												<div class="image-block-1 pdB-24">
 													<img src="<?php echo $relative_path; ?>images/icons/medical.png" alt="">
@@ -274,19 +274,238 @@ $navigation = "index";
 												</div>
 												<div class="text-block-4">
 													<p class="p5">
-														At Phool Versha, we're making a difference now. From 
+														At Phool Versha, we're making a difference now. From
+														providing essential medical care in remote villages to empowering
+													</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="block pdB-45">
+											<div class="block-0">
+												<div class="image-block-1 pdB-24">
+													<img src="<?php echo $relative_path; ?>images/icons/disabled.png" alt="">
+												</div>
+												<div class="text-block-3 pdB-14">
+													<p class="p4">
+														Disability Aid
+													</p>
+												</div>
+												<div class="text-block-4">
+													<p class="p5">
+														At Phool Versha, we're making a difference now. From
+														providing essential medical care in remote villages to empowering
+													</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="block pdB-45">
+											<div class="block-0">
+												<div class="image-block-1 pdB-24">
+													<img src="<?php echo $relative_path; ?>images/icons/rural.png" alt="">
+												</div>
+												<div class="text-block-3 pdB-14">
+													<p class="p4">
+														Rural aid
+													</p>
+												</div>
+												<div class="text-block-4">
+													<p class="p5">
+														At Phool Versha, we're making a difference now. From
+														providing essential medical care in remote villages to empowering
+													</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="block pdB-45">
+											<div class="block-0">
+												<div class="image-block-1 pdB-24">
+													<img src="<?php echo $relative_path; ?>images/icons/books.png" alt="">
+												</div>
+												<div class="text-block-3 pdB-14">
+													<p class="p4">
+														Education
+													</p>
+												</div>
+												<div class="text-block-4">
+													<p class="p5">
+														At Phool Versha, we're making a difference now. From
+														providing essential medical care in remote villages to empowering
+													</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="block pdB-45">
+											<div class="block-0">
+												<div class="image-block-1 pdB-24">
+													<img src="<?php echo $relative_path; ?>images/icons/calamity.png" alt="">
+												</div>
+												<div class="text-block-3 pdB-14">
+													<p class="p4">
+														Calamity Support
+													</p>
+												</div>
+												<div class="text-block-4">
+													<p class="p5">
+														At Phool Versha, we're making a difference now. From
+														providing essential medical care in remote villages to empowering
+													</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="block pdB-45">
+											<div class="block-0">
+												<div class="image-block-1 pdB-24">
+													<img src="<?php echo $relative_path; ?>images/icons/old-age.png" alt="">
+												</div>
+												<div class="text-block-3 pdB-14">
+													<p class="p4">
+														elderly help
+													</p>
+												</div>
+												<div class="text-block-4">
+													<p class="p5">
+														At Phool Versha, we're making a difference now. From
 														providing essential medical care in remote villages to empowering
 													</p>
 												</div>
 											</div>
 										</div>
 									</div>
+									<!--  -->
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- Solutions End -->
+
+				<!-- Activity Start -->
+				<div class="block-5 mgB-45">
+					<div class="hove">
+						<div class="container">
+							<div class="inner-container">
+								<div class="inner">
+									<div class="inner-block">
+										<div class="block-con">
+											<div class="block-con-1">
+												<div class="tag-block">
+													<div class="text-block-1 pdB-24">
+														<p class="p5">
+															Activities
+														</p>
+													</div>
+													<div class="head-block-1 pdB-14">
+														<h2 class="h2">
+															See Us In Action,<br>Showcasing our Efforts and<br>their impact
+														</h2>
+													</div>
+												</div>
+											</div>
+											<div class="block-con-2">
+												<div class="text-block-2 pd-24">
+													<p class="p5">
+														At Phool Versha, we're making a difference now. From providing
+														essential medical care in remote villages to empowering children
+														with education and supporting communities in need, our programs
+														touch lives across India
+													</p>
+												</div>
+											</div>
+										</div>
+
+										<!--  -->
+										<div class="block-con block-con-3 inner">
+
+											<div class="block pdB-45">
+												<div class="block-0">
+													<div class="image-block-1 pdB-24">
+														<img src="<?php echo $relative_path; ?>images/icons/medical.png" alt="">
+													</div>
+													<div class="text-block-3 pdB-14">
+														<p class="p4">
+															Medical Help
+														</p>
+													</div>
+													<div class="text-block-4">
+														<p class="p5">
+															At Phool Versha, we're making a difference now. From
+															providing essential medical care in remote villages to empowering
+														</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="block pdB-45">
+												<div class="block-0">
+													<div class="image-block-1 pdB-24">
+														<img src="<?php echo $relative_path; ?>images/icons/disabled.png" alt="">
+													</div>
+													<div class="text-block-3 pdB-14">
+														<p class="p4">
+															Disability Aid
+														</p>
+													</div>
+													<div class="text-block-4">
+														<p class="p5">
+															At Phool Versha, we're making a difference now. From
+															providing essential medical care in remote villages to empowering
+														</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="block pdB-45">
+												<div class="block-0">
+													<div class="image-block-1 pdB-24">
+														<img src="<?php echo $relative_path; ?>images/icons/rural.png" alt="">
+													</div>
+													<div class="text-block-3 pdB-14">
+														<p class="p4">
+															Rural aid
+														</p>
+													</div>
+													<div class="text-block-4">
+														<p class="p5">
+															At Phool Versha, we're making a difference now. From
+															providing essential medical care in remote villages to empowering
+														</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="block pdB-45">
+												<div class="block-0">
+													<div class="image-block-1 pdB-24">
+														<img src="<?php echo $relative_path; ?>images/icons/books.png" alt="">
+													</div>
+													<div class="text-block-3 pdB-14">
+														<p class="p4">
+															Education
+														</p>
+													</div>
+													<div class="text-block-4">
+														<p class="p5">
+															At Phool Versha, we're making a difference now. From
+															providing essential medical care in remote villages to empowering
+														</p>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<!--  -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Activity End -->
 
 			</div>
 		</div>
