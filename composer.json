@@ -1,12 +1,13 @@
 {
-    "name": "abhishek-more/phoolversha",
+    "name": "Phoolversha",
     "description": "A simple PHP app for Heroku",
     "require": {
-        "php": ">=7.4"
+      "php": ">=7.4"
     },
     "scripts": {
-        "post-install-cmd": [
-            "php -r \"file_exists('vendor/autoload.php') || exit('Install Composer dependencies first.');\""
-        ]
+      "post-install-cmd": [
+        "php -r \"file_exists('vendor/autoload.php') || exit('Install Composer dependencies first.');\""
+      ]
     }
-}
+  }
+  
