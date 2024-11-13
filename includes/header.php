@@ -74,8 +74,8 @@ $$navigation = "active";
 									<p class="p5">Home</p>
 								</a>
 							</li>
-							<li class="<?php echo $aboutus; ?>">
-								<a href="<?php echo $relative_path; ?>about-us">
+							<li class="<?php echo $gallery; ?>">
+								<a href="<?php echo $relative_path; ?>gallery">
 									<p class="p5">Programs</p>
 								</a>
 							</li>
@@ -84,8 +84,8 @@ $$navigation = "active";
 									<p class="p5">Partners</p>
 								</a>
 							</li>
-							<li class="<?php echo $gallery; ?>">
-								<a href="<?php echo $relative_path; ?>gallery">
+							<li class="<?php echo $aboutus; ?>">
+								<a href="<?php echo $relative_path; ?>aboutus">
 									<p class="p5">About</p>
 								</a>
 							</li>

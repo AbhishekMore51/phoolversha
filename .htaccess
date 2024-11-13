@@ -4,7 +4,7 @@ RewriteEngine On    # Turn on the rewriting engine
 RewriteRule    ^home?$    index.php     [QSA,NC,L]
 
 # FOR ABOUT PAGE
-RewriteRule    ^about-us?$    aboutus.php     [QSA,NC,L]
+RewriteRule    ^aboutus?$    aboutus.php     [QSA,NC,L]
 
 # FOR ENQUIRY PAGE
 RewriteRule    ^contact-us?$    contactus.php     [QSA,NC,L]
