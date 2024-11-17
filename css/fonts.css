@@ -127,6 +127,8 @@ td.p3{
 
 .p4,
 p.p4,
+input.p4,
+textarea.p4
 a.p4{
 	font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 24px;
@@ -135,6 +137,8 @@ a.p4{
 
 .p5,
 p.p5,
+input.p5,
+textarea.p5
 a.p5{
 	font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 18px;

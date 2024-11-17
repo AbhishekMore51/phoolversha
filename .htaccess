@@ -6,6 +6,15 @@ RewriteRule    ^home?$    index.php     [QSA,NC,L]
 # FOR ABOUT PAGE
 RewriteRule    ^aboutus?$    aboutus.php     [QSA,NC,L]
 
+# FOR TEAM PAGE
+RewriteRule    ^team?$    team.php     [QSA,NC,L]
+
+# FOR PROGRAM PAGE
+RewriteRule    ^program?$    program.php     [QSA,NC,L]
+
+# FOR PROGRAM DETAILS PAGE
+RewriteRule    ^program/([A-Za-z0-9-]+)/?$    programdetail.php?url=$1     [QSA,NC,L]
+
 # FOR ENQUIRY PAGE
 RewriteRule    ^contact-us?$    contactus.php     [QSA,NC,L]
 

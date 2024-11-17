@@ -1,5 +1,5 @@
 <?php
-$index = $aboutus = $companies = $products = $gallery = $contactus = "";
+$index = $aboutus = $program = $team = $gallery = $contactus = "";
 $$navigation = "active";
 ?>
 
@@ -74,14 +74,14 @@ $$navigation = "active";
 									<p class="p5">Home</p>
 								</a>
 							</li>
-							<li class="<?php echo $gallery; ?>">
-								<a href="<?php echo $relative_path; ?>gallery">
+							<li class="<?php echo $program; ?>">
+								<a href="<?php echo $relative_path; ?>program">
 									<p class="p5">Programs</p>
 								</a>
 							</li>
-							<li class="<?php echo $products; ?>">
-								<a href="<?php echo $relative_path; ?>products">
-									<p class="p5">Partners</p>
+							<li class="<?php echo $team; ?>">
+								<a href="<?php echo $relative_path; ?>team">
+									<p class="p5">Team</p>
 								</a>
 							</li>
 							<li class="<?php echo $aboutus; ?>">
@@ -89,15 +89,15 @@ $$navigation = "active";
 									<p class="p5">About</p>
 								</a>
 							</li>
-							<!-- <li class="<?php echo $contactus; ?> last">
-								<a class="" href="<?php echo $relative_path; ?>contact-us">
+							<!-- <li class=" last">
+								<a class="" href="">
 									<p class="p5">Contact Us</p>
 								</a>
 							</li> -->
 						</ul>
 						<div class="button-block">
-							<div class="btn-1">
-								<a href="#">
+							<div class="<?php echo $contactus; ?> btn-1">
+								<a href="<?php echo $relative_path; ?>contact-us">
 									<p class="p5">
 										Join Us
 									</p>
