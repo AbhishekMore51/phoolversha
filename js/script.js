@@ -65,6 +65,25 @@ $(function () {
     load_functions();
   });
 
+  // Upside Arrow
+  const $backToTop = $("#backToTop"); // Cache the button
+
+  // Show/Hide the button based on scroll position
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 300) {
+      $backToTop.fadeIn(); // Show the button when scrolled down 300px
+    } else {
+      $backToTop.fadeOut(); // Hide the button when at the top
+    }
+  });
+
+  // Scroll to the top when the button is clicked
+  $backToTop.find("a").on("click", function (e) {
+    e.preventDefault(); // Prevent default anchor behavior
+    $("html, body").animate({ scrollTop: 0 }, 300); // Smooth scroll to the top in 300ms
+  });
+  // Upside Arrow
+
   /* Mobile nav script */
 
   /*

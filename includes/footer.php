@@ -30,14 +30,14 @@
 								<div class="text-block-2 <?php echo $index; ?> pdT-14">
 									<a href="<?php echo $relative_path; ?>home" class="p5 pdB-4">Home</a>
 								</div>
+								<div class="text-block-2 <?php echo $program; ?>">
+									<a href="<?php echo $relative_path; ?>program" class="p5 pdB-4">Programs</a>
+								</div>
+								<div class="text-block-2 <?php echo $team; ?>">
+									<a href="<?php echo $relative_path; ?>team" class="p5 pdB-4">Team</a>
+								</div>
 								<div class="text-block-2 <?php echo $aboutus; ?>">
-									<a href="<?php echo $relative_path; ?>about-us" class="p5 pdB-4">About Us</a>
-								</div>
-								<div class="text-block-2 <?php echo $products; ?>">
-									<a href="<?php echo $relative_path; ?>products" class="p5 pdB-4">Products</a>
-								</div>
-								<div class="text-block-2 <?php echo $gallery; ?>">
-									<a href="<?php echo $relative_path; ?>gallery" class="p5 pdB-4">Gallery</a>
+									<a href="<?php echo $relative_path; ?>aboutus" class="p5 pdB-4">About Us</a>
 								</div>
 								<div class="text-block-2 <?php echo $contactus; ?>">
 									<a href="<?php echo $relative_path; ?>contact-us" class="p5 pdB-4">Contact Us</a>

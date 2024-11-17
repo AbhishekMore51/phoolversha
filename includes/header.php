@@ -34,6 +34,18 @@ $$navigation = "active";
 </div>
 -->
 
+<div class="floating-up" id="backToTop">
+	<div class="container">
+		<div class="inner-container">
+			<div class="inner">
+				<a href="#" class="p5">
+					<i class="fas fa-arrow-up p5"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
 <!-- Main Header -->
 <div class="header-block">
 	<div class="header-block-1 pd-35">

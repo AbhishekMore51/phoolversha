@@ -24,6 +24,7 @@ body {
 }
 
 .main {
+  position: relative;
 }
 
 .container {
@@ -131,6 +132,53 @@ a.mobile_only.mob_active {
   cursor: pointer;
 }
 
+/* Floating Block */
+.floating-up {
+  display: none;
+  position: fixed;
+  width: 100%;
+  bottom: 50px;
+  right: 0;
+  z-index: 100;
+}
+
+.floating-up a {
+  background: #ffffff;
+  border: 1px solid #ffb303;
+  padding: 10px 14px;
+  border-radius: 12px;
+  display: block;
+  max-width: 15px;
+  margin: 0 0 0 auto;
+  line-height: 1em;
+  transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+}
+
+.floating-up a i {
+  line-height: 1em;
+  color: #ffb303;
+}
+
+.floating-up a:hover,
+.floating-up a:focus,
+.floating-up a:active{
+  background: #ffb303;
+  transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+}
+
+.floating-up a:hover i,
+.floating-up a:focus i,
+.floating-up a:active i{
+  color: #ffffff;
+}
+/* Floating Block */
+
 /* Header Style */
 
 .header-block {
@@ -219,7 +267,7 @@ a.mobile_only.mob_active {
   padding: 12px 24px;
 }
 
-.header-block .header-block-1 .button-block .active a p{
+.header-block .header-block-1 .button-block .active a p {
   color: #ea2548 !important;
 }
 
@@ -362,6 +410,7 @@ a.mobile_only.mob_active {
 .footer-block .footer-main .footer-0 .text-block-2 a:hover,
 .footer-block .footer-main .footer-0 .text-block-2 a:focus {
   text-decoration: none;
+  line-height: 33px;
 }
 
 .footer-block .footer-main .footer-0 .list-block {
@@ -3347,7 +3396,7 @@ a.mobile_only.mob_active {
   box-shadow: 0px 0px 26.667px 0px rgba(0, 0, 0, 0.15);
 }
 
-.contactus .block-3 .slick-slide li.slick-li .block{
+.contactus .block-3 .slick-slide li.slick-li .block {
   padding: 60px 30px;
 }
 
@@ -3546,58 +3595,64 @@ a.mobile_only.mob_active {
 }
 
 /*  */
-.contactus .block-5{}
+.contactus .block-5 {
+}
 
-.contactus .block-5 .inner-content{
+.contactus .block-5 .inner-content {
   padding: 30px 70px 50px 70px;
 }
 
-.contactus .block-5 .form-block{
-  box-shadow: 0px -51.11px 277.78px 0px rgba(255, 255, 255, 0.5) inset, 0px 0px 26.67px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 22px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+.contactus .block-5 .form-block {
+  box-shadow: 0px -51.11px 277.78px 0px rgba(255, 255, 255, 0.5) inset,
+    0px 0px 26.67px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
 }
 
-.contactus .block-5 .block-51{
+.contactus .block-5 .block-51 {
   padding: 30px;
 }
 
-.contactus .block-5 .block-51 .form-block-0{}
-
-.contactus .block-5 .block-51 .form-block-0 .head-block-1{}
-
-.contactus .block-5 .block-51 .form-block-0 .head-block-1 h2{
-  text-align: left;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #1e1e1e;
-    font-size: 50px;
+.contactus .block-5 .block-51 .form-block-0 {
 }
 
-.contactus .block-5 .block-51 .form-block-0 .text-block-0{}
+.contactus .block-5 .block-51 .form-block-0 .head-block-1 {
+}
 
-.contactus .block-5 .block-51 .form-block-0 .text-block-0 p{
-  color: #2D2D2D99;
+.contactus .block-5 .block-51 .form-block-0 .head-block-1 h2 {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #1e1e1e;
+  font-size: 50px;
+}
+
+.contactus .block-5 .block-51 .form-block-0 .text-block-0 {
+}
+
+.contactus .block-5 .block-51 .form-block-0 .text-block-0 p {
+  color: #2d2d2d99;
   line-height: 26px;
   text-align: left;
 }
 
-.contactus .block-5 .block-51 .form-block-0 .name-block{
+.contactus .block-5 .block-51 .form-block-0 .name-block {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
-.contactus .block-5 .block-51 .form-block-0 .name-block .block{}
+.contactus .block-5 .block-51 .form-block-0 .name-block .block {
+}
 
 .contactus .block-5 .block-51 .form-block-0 input[type="text"] {
   display: block;
   width: 100%;
-  border: 1px solid #2D2D2D33;
+  border: 1px solid #2d2d2d33;
   border-radius: 6px;
-  background: #9B9B9B0D;
+  background: #9b9b9b0d;
   padding: 15px 17px;
   outline: none;
   color: #494949;
@@ -3621,9 +3676,9 @@ a.mobile_only.mob_active {
 .contactus .block-5 .block-51 .form-block-0 textarea {
   display: block;
   width: 100%;
-  border: 1px solid #2D2D2D33;
+  border: 1px solid #2d2d2d33;
   border-radius: 6px;
-  background: #9B9B9B0D;
+  background: #9b9b9b0d;
   padding: 15px 17px;
   outline: none;
   color: #494949;
@@ -3645,17 +3700,17 @@ a.mobile_only.mob_active {
 .contactus .block-5 .block-51 .form-block-0 input[type="submit"] {
   display: block;
   width: 100%;
-  border: 1px solid #FFB303;
-  background: #FFB303;
+  border: 1px solid #ffb303;
+  background: #ffb303;
   text-align: center;
   padding: 14px;
   cursor: pointer;
   border-radius: 7px;
   color: #ffffff;
-  transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -webkit-transition: all .25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
 }
 
 .contactus .block-5 .block-51 .form-block-0 input[type="submit"]:hover,
@@ -3663,19 +3718,20 @@ a.mobile_only.mob_active {
   border: 1px solid #ec6e00;
   color: #ec6e00;
   background: #ffffff;
-  transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -webkit-transition: all .25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
 }
 
-.contactus .block-5 .block-52{
+.contactus .block-5 .block-52 {
   padding: 30px;
 }
 
-.contactus .block-5 .block-52 .image-block-1{}
+.contactus .block-5 .block-52 .image-block-1 {
+}
 
-.contactus .block-5 .block-52 .image-block-1 img{
+.contactus .block-5 .block-52 .image-block-1 img {
   width: 100%;
   border-radius: 15px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
