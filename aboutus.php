@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+// session_start();
 include('libraries/config.php');
 
 $navigation = "aboutus";
@@ -17,13 +17,13 @@ $navigation = "aboutus";
 	<title>About | Phool Versha Foundation</title>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
 
 	<meta name="description" content="" />
 	<meta name="author" content="" />
 
-	<link rel="icon" href="<?php echo $relative_path; ?>images/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" type="img/x-icon" href="<?php echo $relative_path; ?>images/favicon.ico">
+	<link rel="icon" href="<?php echo $relative_path; ?>images/favicon.jpg" type="image/x-icon" />
+	<link rel="shortcut icon" type="img/x-icon" href="<?php echo $relative_path; ?>images/favicon.jpg">
 
 	<link rel="alternate" href="#" hreflang="x-default" />
 
@@ -46,7 +46,7 @@ $navigation = "aboutus";
 			<div class="aboutus">
 
 				<!-- phool banner Start -->
-				<div class="block-1 pdT-45">
+				<div class="block-1 pdT-45 wow bounceInUp" data-wow-duration="1s">
 					<img src="<?php echo $relative_path; ?>images/about-img.jpg" alt="" class="img-1">
 					<img src="<?php echo $relative_path; ?>images/icons/flower-1.png" alt="" class="img-2">
 					<img src="<?php echo $relative_path; ?>images/icons/flower-1.png" alt="" class="img-3">
@@ -67,7 +67,7 @@ $navigation = "aboutus";
 				<!-- phool banner End -->
 
 				<!-- Activity Start -->
-				<div class="block-2 mgB-45">
+				<div class="block-2 mgB-45 wow bounceInUp" data-wow-duration="1s">
 					<div class="container">
 						<div class="inner-container">
 							<div class="inner">
@@ -112,7 +112,7 @@ $navigation = "aboutus";
 							<div class="inner-container">
 								<div class="inner">
 									<div class="inner-block">
-										<div class="tag-block">
+										<div class="tag-block wow slideInDown" data-wow-duration="2s" data-wow-delay="0.4s">
 											<div class="text-block-1 pdB-24">
 												<p class="p5">
 													our Supporters
@@ -141,13 +141,13 @@ $navigation = "aboutus";
 						</div>
 					</div>
 					<div class="block-32 mgT-45">
-						<div class="slider supporter">
+						<div class="slider supporter wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 							<div class="block">
 								<div class="image-block-1">
 									<img src="<?php echo $relative_path; ?>images/support/support-1.jpg" alt="">
 									<div class="con-block">
 										<div class="text-block-1">
-											<p class="p4">Donor name</p>
+											<p class="h4">Donor name</p>
 										</div>
 									</div>
 								</div>
@@ -158,7 +158,7 @@ $navigation = "aboutus";
 									<img src="<?php echo $relative_path; ?>images/support/support-1.jpg" alt="">
 									<div class="con-block">
 										<div class="text-block-1">
-											<p class="p4">Donor name</p>
+											<p class="h4">Donor name</p>
 										</div>
 									</div>
 								</div>
@@ -169,7 +169,7 @@ $navigation = "aboutus";
 									<img src="<?php echo $relative_path; ?>images/support/support-1.jpg" alt="">
 									<div class="con-block">
 										<div class="text-block-1">
-											<p class="p4">Donor name</p>
+											<p class="h4">Donor name</p>
 										</div>
 									</div>
 								</div>
@@ -180,7 +180,7 @@ $navigation = "aboutus";
 									<img src="<?php echo $relative_path; ?>images/support/support-1.jpg" alt="">
 									<div class="con-block">
 										<div class="text-block-1">
-											<p class="p4">Donor name</p>
+											<p class="h4">Donor name</p>
 										</div>
 									</div>
 								</div>
@@ -191,7 +191,7 @@ $navigation = "aboutus";
 									<img src="<?php echo $relative_path; ?>images/support/support-1.jpg" alt="">
 									<div class="con-block">
 										<div class="text-block-1">
-											<p class="p4">Donor name</p>
+											<p class="h4">Donor name</p>
 										</div>
 									</div>
 								</div>
@@ -211,7 +211,7 @@ $navigation = "aboutus";
 									<div class="container">
 										<div class="inner-container">
 											<div class="inner">
-												<div class="block-41">
+												<div class="block-41 wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.3s">
 													<div class="head-block-1 pdB-24">
 														<h2 class="h2">
 															partnered with<br>
@@ -220,13 +220,13 @@ $navigation = "aboutus";
 														</h2>
 													</div>
 													<div class="text-block-1">
-														<p class="p5">
+														<p class="p5 wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
 															The only SaaS business platform that combines
 															CRM, marketing automation & commerce.
 														</p>
 													</div>
 												</div>
-												<div class="block-42">
+												<div class="block-42 wow slideInRight" data-wow-duration="1s" data-wow-delay="0.3s">
 													<div class="block-421">
 														<div class="image-block-1">
 															<img src="<?php echo $relative_path; ?>images/partner/partner-1.jpg" alt="">
@@ -259,7 +259,7 @@ $navigation = "aboutus";
 					<div class="container">
 						<div class="inner-container">
 							<div class="inner">
-								<div class="inner-block">
+								<div class="inner-block wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 									<div class="block-con mgB-45">
 										<div class="block-con-1">
 											<div class="tag-block">
@@ -277,7 +277,7 @@ $navigation = "aboutus";
 										</div>
 										<div class="block-con-2">
 											<div class="text-block-2 pd-24">
-												<p class="p5">
+												<p class="p5 wow slideInRight" data-wow-duration="2s" data-wow-delay="0.3s">
 													At Phool Versha, we're making a difference now. From providing
 													essential medical care in remote villages to e
 												</p>
@@ -285,7 +285,7 @@ $navigation = "aboutus";
 										</div>
 									</div>
 									<div class="video-block">
-										<div class="image-block-1">
+										<div class="image-block-1 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 											<img src="<?php echo $relative_path; ?>images/video-img.jpg" alt="">
 										</div>
 									</div>
@@ -301,9 +301,9 @@ $navigation = "aboutus";
 					<div class="container">
 						<div class="inner-container">
 							<div class="inner">
-								<div class="inner-block">
+								<div class="inner-block wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 									<div class="con-block-1">
-										<div class="slider gallery popup-gallery">
+										<div class="slider gallery popup-gallery wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s">
 											<div class="block">
 												<a href="<?php echo $relative_path; ?>images/gallery/img-11.jpg">
 													<img src="<?php echo $relative_path; ?>images/gallery/img-1.jpg" alt="">
@@ -335,7 +335,7 @@ $navigation = "aboutus";
 												</a>
 											</div>
 										</div>
-										<div class="slider gallery2 popup-gallery2">
+										<div class="slider gallery2 popup-gallery2 wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
 											<div class="block">
 												<a href="<?php echo $relative_path; ?>images/gallery/img-33.jpg">
 													<img src="<?php echo $relative_path; ?>images/gallery/img-3.jpg" alt="">
@@ -364,6 +364,38 @@ $navigation = "aboutus";
 											<div class="block">
 												<a href="<?php echo $relative_path; ?>images/gallery/img-11.jpg">
 													<img src="<?php echo $relative_path; ?>images/gallery/img-1.jpg" alt="">
+												</a>
+											</div>
+										</div>
+										<div class="slider gallery popup-gallery wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+											<div class="block">
+												<a href="<?php echo $relative_path; ?>images/gallery/img-11.jpg">
+													<img src="<?php echo $relative_path; ?>images/gallery/img-1.jpg" alt="">
+												</a>
+											</div>
+											<div class="block">
+												<a href="<?php echo $relative_path; ?>images/gallery/img-22.jpg">
+													<img src="<?php echo $relative_path; ?>images/gallery/img-2.jpg" alt="">
+												</a>
+											</div>
+											<div class="block">
+												<a href="<?php echo $relative_path; ?>images/gallery/img-33.jpg">
+													<img src="<?php echo $relative_path; ?>images/gallery/img-3.jpg" alt="">
+												</a>
+											</div>
+											<div class="block">
+												<a href="<?php echo $relative_path; ?>images/gallery/img-11.jpg">
+													<img src="<?php echo $relative_path; ?>images/gallery/img-1.jpg" alt="">
+												</a>
+											</div>
+											<div class="block">
+												<a href="<?php echo $relative_path; ?>images/gallery/img-22.jpg">
+													<img src="<?php echo $relative_path; ?>images/gallery/img-2.jpg" alt="">
+												</a>
+											</div>
+											<div class="block">
+												<a href="<?php echo $relative_path; ?>images/gallery/img-33.jpg">
+													<img src="<?php echo $relative_path; ?>images/gallery/img-3.jpg" alt="">
 												</a>
 											</div>
 										</div>
@@ -376,7 +408,7 @@ $navigation = "aboutus";
 												</h2>
 											</div>
 											<div class="text-block-2 pd-14">
-												<p class="p5">
+												<p class="p5 wow slideInRight" data-wow-duration="2s" data-wow-delay="0.3s">
 													At Phool Versha, we're making a difference now. From
 													providing essential medical care in remote <br>villages to empowering children
 													with education and supporting communities in need, our programs <br>touch lives across India
@@ -432,6 +464,23 @@ $navigation = "aboutus";
 				slidesToScroll: 4,
 				autoplay: true,
 				autoplaySpeed: 4000,
+				responsive: [{
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 3,
+							infinite: true,
+							dots: true
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2
+						}
+					}
+				]
 			});
 
 			// Gallery Slider
@@ -445,7 +494,22 @@ $navigation = "aboutus";
 				autoplaySpeed: 0,
 				speed: 4000,
 				cssEase: 'linear',
-				pauseOnHover: true
+				pauseOnHover: true,
+				responsive: [{
+						breakpoint: 425,
+						settings: {
+							slidesToShow: 4,
+							slidesToScroll: 4
+						}
+					},
+					{
+						breakpoint: 320,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 3
+						}
+					}
+				]
 			});
 
 			//Gallery Popup
@@ -457,7 +521,7 @@ $navigation = "aboutus";
 				gallery: {
 					enabled: true,
 					navigateByImgClick: true,
-					preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+					preload: [0, 1]
 				},
 				image: {
 					tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
@@ -479,7 +543,22 @@ $navigation = "aboutus";
 				autoplaySpeed: 0,
 				speed: 4000,
 				cssEase: 'linear',
-				pauseOnHover: true
+				pauseOnHover: true,
+				responsive: [{
+						breakpoint: 425,
+						settings: {
+							slidesToShow: 4,
+							slidesToScroll: 4
+						}
+					},
+					{
+						breakpoint: 320,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 3
+						}
+					}
+				]
 			});
 
 			//Gallery Popup
@@ -491,7 +570,7 @@ $navigation = "aboutus";
 				gallery: {
 					enabled: true,
 					navigateByImgClick: true,
-					preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+					preload: [0, 1]
 				},
 				image: {
 					tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
@@ -500,6 +579,9 @@ $navigation = "aboutus";
 					}
 				}
 			});
+
+			// Wow Library
+			new WOW().init();
 		});
 	</script>
 

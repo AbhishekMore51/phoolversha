@@ -24,8 +24,8 @@ RewriteRule    ^404?$    error-404.html     [QSA,NC,L]
 
 #Error Documents Code
 
-ErrorDocument 400     http://localhost/demo/error-document.html
-ErrorDocument 401     http://localhost/demo/error-document.html
-ErrorDocument 403     http://localhost/demo/error-document.html
-ErrorDocument 404     http://localhost/demo/error-404.html
-ErrorDocument 500     http://localhost/demo/error-document.html
+ErrorDocument 400     http://localhost/projects/error-document.html
+ErrorDocument 401     http://localhost/projects/error-document.html
+ErrorDocument 403     http://localhost/projects/error-document.html
+ErrorDocument 404     http://localhost/projects/error-404.html
+ErrorDocument 500     http://localhost/projects/error-document.html

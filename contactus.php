@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+// session_start();
 include('libraries/config.php');
 
 $navigation = "contactus";
@@ -18,13 +18,13 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 	<title>Contact Us | Phool Versha Foundation</title>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
 
 	<meta name="description" content="" />
 	<meta name="author" content="" />
 
-	<link rel="icon" href="<?php echo $relative_path; ?>images/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" type="img/x-icon" href="<?php echo $relative_path; ?>images/favicon.ico">
+	<link rel="icon" href="<?php echo $relative_path; ?>images/favicon.jpg" type="image/x-icon" />
+	<link rel="shortcut icon" type="img/x-icon" href="<?php echo $relative_path; ?>images/favicon.jpg">
 
 	<link rel="alternate" href="#" hreflang="x-default" />
 
@@ -92,7 +92,7 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 						<div class="container">
 							<div class="inner-container">
 								<div class="inner">
-									<div class="inner-content">
+									<div class="inner-content wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 										<div class="block-con mgB-45">
 											<div class="block-con-1">
 												<div class="tag-block">
@@ -105,7 +105,7 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 											</div>
 											<div class="block-con-2">
 												<div class="text-block-2">
-													<p class="p5">
+													<p class="p5 wow slideInRight" data-wow-duration="2s" data-wow-delay="0.3s">
 														At Phool Versha, we're making a difference now. From providing
 														essential medical care in remote villages to e
 													</p>
@@ -113,17 +113,17 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 											</div>
 										</div>
 										<div class="video-block pdB-35">
-											<div class="image-block-1">
+											<div class="image-block-1 wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
 												<img src="<?php echo $relative_path; ?>images/contact.jpg" alt="">
 											</div>
 										</div>
 
 										<div class="block-con-3 inner">
 											<img src="<?php echo $relative_path; ?>images/icons/flower-2.png" alt="" class="img-0">
-											<div class="block pdB-45">
+											<div class="block pdB-45 wow slideInDown" data-wow-delay="0.3s">
 												<div class="block-0">
 													<div class="text-block-3 pdB-14">
-														<p class="p4">
+														<p class="h4">
 															donation details
 														</p>
 													</div>
@@ -137,10 +137,10 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 												</div>
 											</div>
 
-											<div class="block pdB-45">
+											<div class="block pdB-45 wow slideInDown" data-wow-delay="0.4s">
 												<div class="block-0">
 													<div class="text-block-3 pdB-14">
-														<p class="p4">
+														<p class="h4">
 															donation details
 														</p>
 													</div>
@@ -153,10 +153,10 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 													</div>
 												</div>
 											</div>
-											<div class="block pdB-45">
+											<div class="block pdB-45 wow slideInDown" data-wow-delay="0.5s">
 												<div class="block-0">
 													<div class="text-block-3 pdB-14">
-														<p class="p4">
+														<p class="h4">
 															donation details
 														</p>
 													</div>
@@ -181,7 +181,7 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 							<div class="inner-container">
 								<div class="inner">
 									<div class="inner-content">
-										<div class="head-block-1">
+										<div class="head-block-1 wow slideInDown" data-wow-duration="2s">
 											<h2 class="h2">
 												Your donation, helps us<br>
 												<span>solve problems</span>
@@ -194,7 +194,7 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 					</div>
 
 					<div class="block-3">
-						<div class="slider-block">
+						<div class="slider-block wow bounceInUp" data-wow-delay="1s">
 							<ul class="slider-center">
 								<li class="slick-li">
 									<div class="block">
@@ -203,7 +203,7 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 												<img src="<?php echo $relative_path; ?>images/icons/disabled.png" alt="">
 											</div>
 											<div class="text-block-3 pdB-14">
-												<p class="p4">
+												<p class="h4">
 													Disability Aid
 												</p>
 											</div>
@@ -222,10 +222,10 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 									<div class="block">
 										<div class="block-0">
 											<div class="image-block-1 pdB-24">
-												<img src="<?php echo $relative_path; ?>images/icons/RURAL.png" alt="">
+												<img src="<?php echo $relative_path; ?>images/icons/rural.png" alt="">
 											</div>
 											<div class="text-block-3 pdB-14">
-												<p class="p4">
+												<p class="h4">
 													Rural aid
 												</p>
 											</div>
@@ -247,7 +247,7 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 												<img src="<?php echo $relative_path; ?>images/icons/books.png" alt="">
 											</div>
 											<div class="text-block-3 pdB-14">
-												<p class="p4">
+												<p class="h4">
 													Education
 												</p>
 											</div>
@@ -266,10 +266,10 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 									<div class="block">
 										<div class="block-0">
 											<div class="image-block-1 pdB-24">
-												<img src="<?php echo $relative_path; ?>images/icons/CALAMITY.png" alt="">
+												<img src="<?php echo $relative_path; ?>images/icons/calamity.png" alt="">
 											</div>
 											<div class="text-block-3 pdB-14">
-												<p class="p4">
+												<p class="h4">
 													Calamity Support
 												</p>
 											</div>
@@ -295,7 +295,7 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 								<div class="inner-container">
 									<div class="inner">
 										<div class="inner-block">
-											<div class="tag-block">
+											<div class="tag-block wow slideInDown" data-wow-duration="1s" data-wow-delay="0.4s">
 												<div class="text-block-1 pdB-24">
 													<p class="p5">
 														our Supporters
@@ -324,7 +324,7 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 							</div>
 						</div>
 						<div class="block-42 mgT-45">
-							<div class="slider supporter">
+							<div class="slider supporter wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
 								<div class="block">
 									<div class="image-block-1">
 										<img src="<?php echo $relative_path; ?>images/support/support-1.jpg" alt="">
@@ -391,8 +391,8 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 							<div class="inner-container">
 								<div class="inner">
 									<div class="inner-content">
-										<div class="form-block">
-											<div class="block-51">
+										<div class="form-block wow bounceInUp" data-wow-duration="1s">
+											<div class="block-51 wow slideInLeft" data-wow-duration="2s" data-wow-delay=".25s">
 												<form name="QueryForm" id="QueryForm" method="POST" action="ct-query-action" onSubmit="return false; /*validate('QueryForm')*/;">
 													<div class="form-block-0 clearfix">
 														<div class="head-block-1 pdB-14">
@@ -446,7 +446,7 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 													</div>
 												</form>
 											</div>
-											<div class="block-52">
+											<div class="block-52 wow slideInRight" data-wow-duration="2s" data-wow-delay=".25s">
 												<div class="image-block-1">
 													<img src="<?php echo $relative_path; ?>images/contact-img.png" alt="">
 												</div>
@@ -512,17 +512,10 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 				responsive: [{
 						breakpoint: 1024,
 						settings: {
-							slidesToShow: 3,
-							slidesToScroll: 3,
-							infinite: true,
-							dots: true,
-						},
-					},
-					{
-						breakpoint: 600,
-						settings: {
 							slidesToShow: 2,
 							slidesToScroll: 2,
+							infinite: true,
+							dots: true,
 						},
 					},
 					{
@@ -542,7 +535,27 @@ $_SESSION[sys_prefix . '_contact'] = 'asdasdasdasdasda1asds';
 				slidesToScroll: 4,
 				autoplay: true,
 				autoplaySpeed: 4000,
+				responsive: [{
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 3,
+							infinite: true,
+							dots: true
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2
+						}
+					}
+				]
 			});
+
+			// Wow Library
+			new WOW().init();
 		});
 
 		/*= User specified functions =*/

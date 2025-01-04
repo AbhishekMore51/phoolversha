@@ -16,31 +16,6 @@ $(window).load(function () {
   /*= Remove Loader =*/
   $(".loader-overlay").fadeOut("200");
 
-  /*= Welcome block script =*/
-
-  /*
-	if(!sys_session)
-	{
-		var welcome_overlay_width = 60 * document_width / 100;
-		if(welcome_overlay_width > 340)
-			welcome_overlay_width = 340;
-		var marginright = welcome_overlay_width / 2;
-		
-		$('.welcome-overlay .animate-logo-block.block-1').delay(700).animate({
-			width: welcome_overlay_width,
-			marginRight: '-'+marginright
-		}, 1400, function(){
-			$('.welcome-overlay').delay(3000).fadeOut(700, function(){
-				//$('body').css('position', 'static');
-				$('body').addClass('body-static');
-				$('.header-block').animate({
-					"opacity": 1
-				}, 700);
-			});
-		});
-	}
-	*/
-
   $("body").css("position", "static");
 
   $(window).trigger("scroll");
@@ -48,8 +23,6 @@ $(window).load(function () {
 
 /*= ------- Doc Ready Function ------- =*/
 $(function () {
-  /*= Welcome Script =*/
-  if (!sys_session) $(".welcome-overlay").show();
 
   /*= Call ready function =*/
   ready_functions();
@@ -85,59 +58,16 @@ $(function () {
   // Upside Arrow
 
   /* Mobile nav script */
-
-  /*
-	$(".nav-button-block").click(function () {
+  $(".nav-bars").click(function () {
     var element = $(".navigation-block");
-    var animate_width = element.find(".navigation").outerWidth();
 
-    $(element)
-      .fadeIn(100)
-      .find(".navigation")
-      .animate(
-        {
-          right: 0,
-        },
-        300,
-        function () {
-          $(".navigation-block .inner").click(function (e) {
-            if (e.target == this) {
-              $(element)
-                .find(".navigation")
-                .animate(
-                  {
-                    right: "-" + animate_width,
-                  },
-                  200,
-                  function () {
-                    element.fadeOut(100, function () {
-                      $(element).unbind(e);
-                    });
-                  }
-                );
-            }
-          });
+    $(element).fadeIn(200);
 
-          // Close mobile nav on close-button click
-          $(".navigation-block .close-button").click(function (e) {
-            $(element)
-              .find(".navigation")
-              .animate(
-                {
-                  right: "-" + animate_width,
-                },
-                200,
-                function () {
-                  element.fadeOut(100, function () {
-                    $(element).unbind(e);
-                  });
-                }
-              );
-          });
-        }
-      );
+    // Close
+    $(".navigation-block .close-button").click(function (e) {
+      $(element).fadeOut(200);
+    });
   });
-	*/
 });
 
 /*= ------- Default Functions to run after document is ready and on resize ------- =*/
@@ -155,20 +85,6 @@ function ready_functions() {
     $(".header-block .header-block-1 .navigation-block").hide(100);
     mobile_nav_status_disp = true;
   }
-
-  // Mobile Filter - show block when doc size greater thn 768 (For Event Page)
-  /*
-	if(document_width > 960 && mobile_filter2_status_disp)
-	{
-		$('.event .right-block').show(100);
-		mobile_filter2_status_disp = false;
-	}
-	else if(document_width <= 960 && !mobile_filter2_status_disp)
-	{
-		$('.event .right-block').hide(100);
-		mobile_filter2_status_disp = true;
-	}
-	*/
 
   // Page Specific Functions to run after document is and on resize
   page_ready_functions();
@@ -198,3 +114,26 @@ function vertical_center() {
 }
 
 /*------ Add more functions here -------*/
+// Check if the welcome overlay has been shown before using localStorage
+if (!localStorage.getItem("welcomeShown")) {
+  // Set localStorage to indicate the overlay has been shown
+  localStorage.setItem("welcomeShown", "true");
+
+  // Wait for 5 seconds (duration of zoom animation)
+  setTimeout(function () {
+    // Fade out the welcome overlay after animation
+    $(".welcome-overlay").fadeOut(1000, function () {
+      $("body").addClass("body-static"); // Allow scrolling and interaction with the page
+
+      // Initialize WOW.js after the welcome overlay disappears
+      new WOW().init(); // This ensures WOW.js starts only after the overlay is gone
+    });
+  }, 5000); // Total duration = 5 seconds for the animation
+} else {
+  // If the welcome overlay has already been shown, just hide it instantly
+  $(".welcome-overlay").hide();
+  $("body").addClass("body-static"); // Allow scrolling and interaction
+
+  // Initialize WOW.js immediately
+  new WOW().init();
+}

@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+// session_start();
 include('libraries/config.php');
 
 $navigation = "program";
@@ -22,8 +22,8 @@ $relative_path = "../";
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <link rel="icon" href="<?php echo $relative_path; ?>images/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" type="img/x-icon" href="<?php echo $relative_path; ?>images/favicon.ico">
+    <link rel="icon" href="<?php echo $relative_path; ?>images/favicon.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" type="img/x-icon" href="<?php echo $relative_path; ?>images/favicon.jpg">
 
     <link rel="alternate" href="#" hreflang="x-default" />
 
@@ -410,7 +410,7 @@ $relative_path = "../";
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 4000,
+                autoplaySpeed: 400000000,
                 responsive: [{
                         breakpoint: 1024,
                         settings: {

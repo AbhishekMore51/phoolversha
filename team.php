@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+// session_start();
 include('libraries/config.php');
 
 $navigation = "team";
@@ -17,13 +17,13 @@ $navigation = "team";
     <title>Team | Phool Versha Foundation</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
 
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <link rel="icon" href="<?php echo $relative_path; ?>images/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" type="img/x-icon" href="<?php echo $relative_path; ?>images/favicon.ico">
+    <link rel="icon" href="<?php echo $relative_path; ?>images/favicon.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" type="img/x-icon" href="<?php echo $relative_path; ?>images/favicon.jpg">
 
     <link rel="alternate" href="#" hreflang="x-default" />
 
@@ -51,7 +51,7 @@ $navigation = "team";
                             <div class="inner-container">
                                 <div class="inner">
                                     <div class="inner-block">
-                                        <div class="tag-block">
+                                        <div class="tag-block wow bounceInUp" data-wow-duration="1s">
                                             <div class="text-block-1 pdB-24">
                                                 <p class="p5">
                                                     Out Team
@@ -63,9 +63,9 @@ $navigation = "team";
                                                 </h2>
                                             </div>
                                             <div class="text-block-2 pd-14">
-                                                <p class="p5">
+                                                <p class="p5 wow slideInRight" data-wow-duration="2s" data-wow-delay=".25s">
                                                     At Phool Versha, we're making a difference now. From providing essential
-                                                    medical care<br>in remote villages to e
+                                                    medical care in remote villages to e
                                                 </p>
                                             </div>
                                         </div>
@@ -78,7 +78,7 @@ $navigation = "team";
                         <div class="container">
                             <div class="inner-container">
                                 <div class="inner inner-content">
-                                    <div class="block">
+                                    <div class="block wow bounceInUp" data-wow-duration="1s">
                                         <div class="image-block-1">
                                             <img src="<?php echo $relative_path; ?>images/team/team-1.jpg" alt="">
                                         </div>
@@ -97,7 +97,7 @@ $navigation = "team";
                                         </div>
                                     </div>
 
-                                    <div class="block">
+                                    <div class="block wow bounceInUp" data-wow-duration="1s">
                                         <div class="image-block-2">
                                             <img src="<?php echo $relative_path; ?>images/icons/flower-2.png" alt="" class="img-1">
                                         </div>
@@ -119,7 +119,7 @@ $navigation = "team";
                                         </div>
                                     </div>
 
-                                    <div class="block">
+                                    <div class="block wow bounceInUp" data-wow-duration="1s">
                                         <div class="image-block-3">
                                             <img src="<?php echo $relative_path; ?>images/icons/flower-2.png" alt="" class="img-3">
                                         </div>
@@ -142,7 +142,7 @@ $navigation = "team";
                                         </div>
                                     </div>
 
-                                    <div class="block">
+                                    <div class="block wow bounceInUp" data-wow-duration="1s">
                                         <div class="image-block-4">
                                             <img src="<?php echo $relative_path; ?>images/icons/flower-3.png" alt="" class="img-4">
                                         </div>
@@ -164,7 +164,6 @@ $navigation = "team";
                                         </div>
                                     </div>
 
-
                                 </div>
                             </div>
                         </div>
@@ -177,7 +176,7 @@ $navigation = "team";
                         <div class="inner-container">
                             <div class="inner">
                                 <div class="inner-content">
-                                    <div class="block">
+                                    <div class="block wow bounceInUp" data-wow-duration="1s">
                                         <div class="block-0">
                                             <div class="image-block-1 mgB-14">
                                                 <img src="<?php echo $relative_path; ?>images/team/team-1.jpg" alt="">
@@ -197,7 +196,7 @@ $navigation = "team";
                                         </div>
                                     </div>
 
-                                    <div class="block">
+                                    <div class="block wow bounceInUp" data-wow-duration="1s">
                                         <div class="block-0">
                                             <div class="image-block-1 mgB-14">
                                                 <img src="<?php echo $relative_path; ?>images/team/team-1.jpg" alt="">
@@ -217,7 +216,7 @@ $navigation = "team";
                                         </div>
                                     </div>
 
-                                    <div class="block">
+                                    <div class="block wow bounceInUp" data-wow-duration="1s">
                                         <div class="block-0">
                                             <div class="image-block-1 mgB-14">
                                                 <img src="<?php echo $relative_path; ?>images/team/team-1.jpg" alt="">
@@ -237,7 +236,7 @@ $navigation = "team";
                                         </div>
                                     </div>
 
-                                    <div class="block">
+                                    <div class="block wow bounceInUp" data-wow-duration="1s">
                                         <div class="block-0">
                                             <div class="image-block-1 mgB-14">
                                                 <img src="<?php echo $relative_path; ?>images/team/team-1.jpg" alt="">
@@ -289,7 +288,10 @@ $navigation = "team";
         $(window).load(function() {});
 
         /*= Page Specific Functions that loads ONLY on DOC READY =*/
-        $(function() {});
+        $(function() {
+            // Wow Library
+            new WOW().init();
+        });
     </script>
 
 </body>

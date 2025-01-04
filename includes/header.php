@@ -2,11 +2,30 @@
 $index = $aboutus = $program = $team = $gallery = $contactus = "";
 $$navigation = "active";
 ?>
-
-<!--
+<div class="welcome-overlay">
+	<img src="<?php echo $relative_path; ?>images/mobile-logo.png" alt="Welcome Image">
+</div>
 <div class="loader-overlay">
 	<div class="image-block">
-		<img src="<?php echo $relative_path; ?>images/loading.gif" alt="Loading..." />
+		<div class="loader">
+			<div class="loader-inner">
+				<div class="loader-line-wrap">
+					<div class="loader-line"></div>
+				</div>
+				<div class="loader-line-wrap">
+					<div class="loader-line"></div>
+				</div>
+				<div class="loader-line-wrap">
+					<div class="loader-line"></div>
+				</div>
+				<div class="loader-line-wrap">
+					<div class="loader-line"></div>
+				</div>
+				<div class="loader-line-wrap">
+					<div class="loader-line"></div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="text-block pdB-7">
 		<p>Loading.. Please wait!</p>
@@ -15,24 +34,6 @@ $$navigation = "active";
 		<p></p>
 	</div>
 </div>
--->
-
-<!-- Welcome Block -->
-
-<!--
-<div class="welcome-overlay">
-	<div class="inner">
-		<div class="animate-logo-block block-1">
-			<img src="<?php echo $relative_path; ?>images/dnl-group-welcome.png" alt="" />
-		</div>
-		<div class="animate-logo-block block-2">
-			<div class="text-block">
-				<p class="h4"><span class="blue">Oils</span> &nbsp;•&nbsp; <span class="red">Properties</span> &nbsp;•&nbsp; <span class="green">Agricultural Produce</span></p>
-			</div>
-		</div>
-	</div>
-</div>
--->
 
 <div class="floating-up" id="backToTop">
 	<div class="container">
@@ -56,22 +57,20 @@ $$navigation = "active";
 				<div class="navigation-block">
 					<!--<div class="header-block-2-inner clearfix">-->
 					<div class="inner">
-						<!--
 						<div class="close-button">
 							<div class="icon-block">
-								<i class="fas fa-times-circle"></i>
+								<i class="fas fa-times"></i>
 							</div>
 						</div>
-						-->
 						<div class="logo-block">
 							<a class="clearfix" href="<?php echo $relative_path; ?>home">
-								<!-- <div class="image-block">
-									<img src="<?php echo $relative_path; ?>images/dummy-logo.png" alt="Compnay Name" />
-								</div> -->
 								<div class="text-block-1">
 									<p class="p1">
 										phool<br>versha<br>foundation
 									</p>
+								</div>
+								<div class="image-block-0">
+									<img src="<?php echo $relative_path; ?>images/mobile-logo.png" alt="">
 								</div>
 							</a>
 						</div>
@@ -101,11 +100,6 @@ $$navigation = "active";
 									<p class="p5">About</p>
 								</a>
 							</li>
-							<!-- <li class=" last">
-								<a class="" href="">
-									<p class="p5">Contact Us</p>
-								</a>
-							</li> -->
 						</ul>
 						<div class="button-block">
 							<div class="<?php echo $contactus; ?> btn-1">
@@ -122,6 +116,32 @@ $$navigation = "active";
 									</p>
 								</a>
 							</div>
+						</div>
+
+						<!--  -->
+						<div class="mobile-bg">
+							<img src="<?php echo $relative_path; ?>images/mobile-bg.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="more-block">
+					<div class="nav-button-block">
+						<div class="icon-block">
+							<i class="fas fa-bars nav-bars"></i>
+						</div>
+					</div>
+
+					<div class="navigation-block-2">
+						<div class="image-block-2">
+							<img src="<?php echo $relative_path; ?>images/mobile-logo.png" alt="">
+						</div>
+					</div>
+					<div class="navigation-block-3">
+						<div class="image-block-3">
+							<img class="img-1" src="<?php echo $relative_path; ?>images/icons/flower-1.png" alt="">
+							<img class="img-2" src="<?php echo $relative_path; ?>images/icons/flower-2.png" alt="">
+							<img class="img-3" src="<?php echo $relative_path; ?>images/icons/flower-2.png" alt="">
+							<img class="img-4" src="<?php echo $relative_path; ?>images/icons/flower-1.png" alt="">
 						</div>
 					</div>
 				</div>

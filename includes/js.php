@@ -2,3 +2,4 @@
 <script type="text/javascript" src="<?php echo $relative_path; ?>js/script.js"></script>
 <script type="text/javascript" src="<?php echo $relative_path; ?>js/slick.js"></script>
 <script type="text/javascript" src="<?php echo $relative_path; ?>js/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="<?php echo $relative_path; ?>js/wow.js"></script>
